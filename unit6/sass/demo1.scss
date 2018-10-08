@@ -1,0 +1,20 @@
+$fontSize : 14px;
+$fontSize : 12px !default;
+$padding : 5px 10px 5px 10px;
+$map : (color:red,background : blue);
+$className : container;
+body{
+  $color : red !global;
+  background: $color;
+  font-size : $fontSize;
+  padding: $padding;
+  padding-left:nth($padding,3);
+  background : map-get($map,color);
+}
+h1{
+  color : $color;
+}
+.#{$className}{
+  width : 50px;
+  height:100px;
+}
